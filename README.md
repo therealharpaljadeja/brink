@@ -16,6 +16,10 @@ selected account's health factor visible without opening a browser.
 [Security](SECURITY.md) · [Code of Conduct](CODE_OF_CONDUCT.md) ·
 [MIT License](LICENSE)
 
+## Demo
+
+[▶ Watch Brink in action (MP4)](video/brink.mp4)
+
 ## What Brink does
 
 - Watches public wallet addresses without requesting a private key.
@@ -86,6 +90,7 @@ Sources/
 └── BrinkCore/          Aave models, RPC decoding, persistence, and polling
 Tests/BrinkCoreTests/   Deterministic unit tests with no live-network requirement
 Package.swift           SwiftPM development and test harness
+video/brink.mp4         Product demo
 .github/                CI, dependency updates, issue forms, and PR template
 ```
 
