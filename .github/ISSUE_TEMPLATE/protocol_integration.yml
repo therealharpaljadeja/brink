@@ -1,0 +1,59 @@
+name: Protocol integration
+description: Propose a new protocol, network, contract, API, or indexer
+title: "[Integration]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Integrations change the meaning and reliability of Brink's risk signal. Agree on sources, units, failure behavior, and verification before implementation.
+  - type: input
+    id: protocol
+    attributes:
+      label: Protocol and version
+      placeholder: Aave V3
+    validations:
+      required: true
+  - type: input
+    id: network
+    attributes:
+      label: Network and chain ID
+      placeholder: Monad mainnet, 143
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Canonical sources
+      description: Link the official address book, verified deployments, ABI, and protocol documentation.
+    validations:
+      required: true
+  - type: textarea
+    id: metric
+    attributes:
+      label: Risk metric and units
+      description: Define the user-facing metric, thresholds, decimal scales, sentinel values, and liquidation meaning.
+    validations:
+      required: true
+  - type: textarea
+    id: failures
+    attributes:
+      label: Failure and stale-data behavior
+      description: Explain timeouts, reverts, malformed data, rate limits, sleep/wake, and recovery.
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy and external services
+      description: Identify every RPC, API, indexer, analytics provider, and data sent to it.
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: Verification and test evidence
+      description: Describe deterministic fixtures, decoder tests, and how users can compare values independently.
+    validations:
+      required: true

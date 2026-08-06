@@ -1,0 +1,6 @@
+# Protocol, RPC, and risk-display changes require maintainer review.
+* @therealharpaljadeja
+
+/Sources/BrinkCore/ @therealharpaljadeja
+/Tests/ @therealharpaljadeja
+/.github/ @therealharpaljadeja

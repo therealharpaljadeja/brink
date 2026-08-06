@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Core tests and macOS app
+    runs-on: macos-14
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Show toolchain
+        run: |
+          swift --version
+          xcodebuild -version
+
+      - name: Run deterministic core tests
+        run: swift test
+
+      - name: Build native app without signing
+        run: |
+          xcodebuild -project Brink.xcodeproj -scheme Brink \
+            -destination 'platform=macOS' \
+            CODE_SIGNING_ALLOWED=NO build

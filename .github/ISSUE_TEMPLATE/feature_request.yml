@@ -1,0 +1,44 @@
+name: Feature request
+description: Propose a focused improvement to Brink
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Explain the user problem first. Use the protocol-integration form for a new protocol, network, contract, API, or indexer.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and discussions for this proposal.
+          required: true
+        - label: This request does not disclose a vulnerability.
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user or contributor problem should be solved?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the smallest useful change.
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk and privacy impact
+      description: Could this affect displayed risk, network requests, persistence, accessibility, or wallet privacy?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
