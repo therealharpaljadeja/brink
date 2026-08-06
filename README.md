@@ -18,7 +18,9 @@ selected account's health factor visible without opening a browser.
 
 ## Demo
 
-[▶ Watch Brink in action (MP4)](video/brink.mp4)
+
+https://github.com/user-attachments/assets/73a9c8c7-242b-41e9-a38b-e8edd18724fa
+
 
 ## What Brink does
 
