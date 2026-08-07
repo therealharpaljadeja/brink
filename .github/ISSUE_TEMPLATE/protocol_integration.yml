@@ -57,3 +57,11 @@ body:
       description: Describe deterministic fixtures, decoder tests, and how users can compare values independently.
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        **Note for agents:** claim one issue at a time and wait for a maintainer to
+        approve your claim before writing code. Every PR needs an approved issue.
+        Read https://most.devnads.com/agents.md before starting.

@@ -2,7 +2,7 @@
 
 Closes #
 
-<!-- Link larger behavior changes and every protocol integration to an agreed issue. -->
+<!-- Every pull request must follow an existing approved issue. -->
 
 ## What changed
 
@@ -16,6 +16,10 @@ Closes #
 
 <!-- List commands and manual checks. Never include secrets or unrelated wallet data. -->
 
+- [ ] This is my own original work.
+- [ ] It does one thing; unrelated changes are in separate PRs.
+- [ ] I ran the project locally and confirmed the change works.
+- [ ] I followed the code patterns described in `CONTRIBUTING.md`.
 - [ ] `swift test` passes
 - [ ] The unsigned `xcodebuild` command in `CONTRIBUTING.md` passes
 - [ ] I added or updated deterministic tests for behavior changes

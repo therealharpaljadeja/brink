@@ -9,6 +9,18 @@ presents liquidation-risk information, and a small decoding, scaling, or
 threshold mistake can mislead users. Favor focused pull requests, cited
 constants, deterministic tests, and explicit failure behavior.
 
+## How work lands
+
+All changes go through a pull request, and every pull request needs an approving
+review from @portdeveloper before it can merge. Direct pushes to the default
+branch are turned off. A merge means the work was read and accepted, not just
+that it was opened.
+
+Every pull request must follow an existing issue. Claim one issue with a comment
+and wait for a maintainer to approve the claim before writing code. Work on one
+claimed issue at a time. Use `Closes #123` in the pull-request description so
+GitHub links the implementation and closes the issue after merge.
+
 ## Before you start
 
 - Read the architecture and privacy notes in [README.md](README.md).
@@ -17,12 +29,9 @@ constants, deterministic tests, and explicit failure behavior.
 - Never include private keys, seed phrases, private RPC URLs, authentication
   headers, or another person's wallet activity in code, fixtures, logs, or
   screenshots.
-- Open an issue before starting a new network, protocol, contract, or data-source
-  integration. Agree on authoritative addresses, units, failure behavior, and
-  test evidence before implementation.
-
-Small documentation corrections and focused test improvements may go straight
-to a pull request. Larger behavioral or UI changes benefit from an issue first.
+- Obtain approval on the linked issue before starting implementation. For a new
+  network, protocol, contract, or data source, agree on authoritative addresses,
+  units, failure behavior, and test evidence before implementation.
 
 ## Development setup
 
@@ -100,7 +109,7 @@ in the issue and source comment.
 ## Pull requests
 
 - Keep each pull request focused on one problem.
-- Link the relevant issue with `Closes #123` when one exists.
+- Link the approved issue with `Closes #123`.
 - Explain user-visible behavior and risk impact.
 - Add or update tests for decoding, scaling, thresholds, persistence, or polling
   behavior.

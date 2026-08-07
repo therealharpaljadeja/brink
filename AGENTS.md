@@ -1,5 +1,10 @@
 # Instructions for AI coding agents
 
+Read https://most.devnads.com/agents.md before opening an issue or a pull
+request here. Every pull request needs an approved issue first. Work on one
+claimed issue at a time, and wait for a maintainer to approve the claim before
+writing code.
+
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before changing code.
 
 - Do not add or change a protocol, network, contract address, selector, ABI

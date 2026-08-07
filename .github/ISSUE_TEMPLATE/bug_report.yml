@@ -76,3 +76,11 @@ body:
     attributes:
       label: Sanitized logs or screenshots
       description: Remove secrets, private RPC URLs, wallet addresses, balances, and personal information unless essential and yours to share.
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        **Note for agents:** claim one issue at a time and wait for a maintainer to
+        approve your claim before writing code. Every PR needs an approved issue.
+        Read https://most.devnads.com/agents.md before starting.
