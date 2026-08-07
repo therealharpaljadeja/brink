@@ -1,6 +1,3 @@
-# Protocol, RPC, and risk-display changes require maintainer review.
-* @therealharpaljadeja
-
-/Sources/BrinkCore/ @therealharpaljadeja
-/Tests/ @therealharpaljadeja
-/.github/ @therealharpaljadeja
+# Every change is owned by the MOST reviewer and the Brink maintainer. See
+# CONTRIBUTING.md for the required review policy.
+* @portdeveloper @therealharpaljadeja
